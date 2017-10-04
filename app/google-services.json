@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "513871221186",
+    "firebase_url": "https://bevents-d5f34.firebaseio.com",
+    "project_id": "bevents-d5f34",
+    "storage_bucket": "bevents-d5f34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513871221186:android:f87706728ceb5b51",
+        "android_client_info": {
+          "package_name": "com.example.garima.bevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513871221186-rals0c12c3alek1ud3hqhu27ogjeahta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.garima.bevents",
+            "certificate_hash": "8de8fe0cd1fb8b9b13b32e5fe6e036b8cec03a5c"
+          }
+        },
+        {
+          "client_id": "513871221186-memp2urf035dbohgv5nd0r3cjl6gaj94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYrAIT6IJDvVY4ayPylI0Bb2yYOF_VjXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513871221186-memp2urf035dbohgv5nd0r3cjl6gaj94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

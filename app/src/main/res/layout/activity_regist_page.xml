@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.garima.bevents.Register.Regist_page">
+
+
+    <TextView
+        android:id="@+id/fnamev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="FIRST NAME"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="102dp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="91dp"
+        android:layout_toEndOf="@+id/fnamev"
+        android:layout_toRightOf="@+id/fnamev"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fnamev"
+        android:layout_alignStart="@+id/fnamev"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="64dp"
+        android:text="LAST NAME" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_alignStart="@+id/fname" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/lname"
+        android:layout_marginTop="54dp"
+        android:text="ID" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_alignStart="@+id/lname" />
+
+    <Button
+        android:id="@+id/rsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="48dp"
+        android:text="save" />
+
+    <Button
+        android:id="@+id/rclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rsave"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_toEndOf="@+id/rsave"
+        android:layout_toRightOf="@+id/rsave"
+        android:text="clear" />
+
+    <TextView
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="new user?Register here"
+        android:textSize="20dp"
+        android:layout_below="@+id/rsave"
+        android:layout_alignRight="@+id/rclear"
+        android:layout_alignEnd="@+id/rclear" />
+
+    <TextView
+        android:id="@+id/newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="20dp"
+        android:layout_below="@+id/regist"
+        android:layout_alignLeft="@+id/regist"
+        android:layout_alignStart="@+id/regist"
+        android:layout_marginTop="25dp" />
+
+
+</RelativeLayout>
