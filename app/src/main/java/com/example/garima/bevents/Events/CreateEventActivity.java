@@ -78,6 +78,7 @@ public class CreateEventActivity extends AppCompatActivity implements View.OnCli
         }
         else
             if (view == uploadbutton) {
+                uploadfile();
 
         }
         else

@@ -1,8 +1,11 @@
 package com.example.garima.bevents.Events;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.garima.bevents.R;
 
 /**
  * Created by Garima on 22-09-2017.
@@ -10,10 +13,23 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
+    CharSequence Titles[];
+    int NumbOfTabs;
+    Context context;
 
 
-    public PagerAdapter(FragmentManager fm) {
+    public PagerAdapter(Context context,FragmentManager fm){
         super(fm);
+        this.context = context;
+
+    }
+
+
+    public PagerAdapter(FragmentManager fm,CharSequence mTitles[], int mNumbOfTabsumb) {
+        super(fm);
+
+        this.Titles = mTitles;
+        this.NumbOfTabs = mNumbOfTabsumb;
     }
 
     @Override
@@ -35,10 +51,27 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         }
     }
 
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        switch (position) {
+            case 0:
+                return context.getString(R.string.explore);
+            case 1:
+                return context.getString(R.string.Calender);
+            case 2:
+                return context.getString(R.string.Myevents);
+
+            default:
+                return null;
+        }
+    }
+
+
     @Override
     public int getCount() {
         return 3;
     }
 }
-
 

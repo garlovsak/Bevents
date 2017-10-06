@@ -19,7 +19,12 @@
         <activity android:name=".Register.home_page" />
         <activity android:name=".Register.Regist_page" />
         <activity android:name=".Register.Create_pass" />
-        <activity android:name=".Events.EventsListActivity" />
+        <activity android:name=".Events.EventsListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".Events.CreateEventActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

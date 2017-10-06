@@ -15,15 +15,15 @@ import com.example.garima.bevents.R;
  */
 
 public class UserEventsFragment extends Fragment implements View.OnClickListener{
-    Button cevent;
+    Button cEvent;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater,container,savedInstanceState);
-        View Inputfregv =  inflater.inflate(R.layout.calender, container, false);
+        View Inputfregv =  inflater.inflate(R.layout.myevents, container, false);
 
-        cevent = (Button) Inputfregv.findViewById(R.id.button2);
-        cevent.setOnClickListener(this);
+        cEvent = (Button) Inputfregv.findViewById(R.id.button2);
+        cEvent.setOnClickListener(this);
 
         return Inputfregv;
 
@@ -32,7 +32,7 @@ public class UserEventsFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-        if(view == cevent){
+        if(view == cEvent){
             Intent i = new Intent(getActivity(),CreateEventActivity.class);
             startActivity(i);
         }
