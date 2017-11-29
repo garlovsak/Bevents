@@ -1,12 +1,26 @@
 <resources>
 
-    <!-- Base application theme. -->
+      <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:panelColorBackground">@color/cardview_dark_background</item>
     </style>
+    <style name="MaterialTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/cardview_dark_background</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.CustomTheme">
+
+    <item name="android:windowIsTranslucent">true</item>
+    <item name ="android:windowCloseOnTouchOutside">true</item>
+
+     </style>
+
+
 
 </resources>
 

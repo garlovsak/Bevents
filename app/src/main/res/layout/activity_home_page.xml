@@ -25,7 +25,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID"
+        android:text="EMAIL_ID"
         android:textSize="25dp"
         android:layout_alignBottom="@+id/email"
         android:layout_alignParentLeft="true"

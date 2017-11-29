@@ -13,14 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="22dp"
         android:layout_marginStart="22dp"
-        android:text="FIRST NAME"
+        android:text="EMAIL_ID"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="102dp" />
 
     <EditText
-        android:id="@+id/fname"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -30,7 +30,7 @@
         android:layout_toEndOf="@+id/fnamev"
         android:layout_toRightOf="@+id/fnamev"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textSize="30dp" />
 
     <TextView
@@ -39,12 +39,12 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/fnamev"
         android:layout_alignStart="@+id/fnamev"
-        android:layout_below="@+id/fname"
+        android:layout_below="@+id/email"
         android:layout_marginTop="64dp"
-        android:text="LAST NAME" />
+        android:text="PASSWORD" />
 
     <EditText
-        android:id="@+id/lname"
+        android:id="@+id/rpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
@@ -54,40 +54,20 @@
         android:textSize="30dp"
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/fname"
-        android:layout_alignStart="@+id/fname" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView4"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_below="@+id/lname"
-        android:layout_marginTop="54dp"
-        android:text="ID" />
-
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="30dp"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/lname"
-        android:layout_alignStart="@+id/lname" />
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
 
     <Button
         android:id="@+id/rsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/editText6"
-        android:layout_marginTop="48dp"
-        android:text="save" />
+        android:layout_marginTop="37dp"
+        android:text="save"
+        android:layout_below="@+id/rpassword"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
 
     <Button
         android:id="@+id/rclear"
@@ -112,7 +92,7 @@
         android:layout_alignEnd="@+id/rclear" />
 
     <TextView
-        android:id="@+id/newpass"
+        android:id="@+id/rnewpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forget Password"
