@@ -3,4 +3,10 @@
     <string name="explore">Explore</string>
     <string name="Calender">Calender</string>
     <string name="Myevents">MyEvents</string>
+
+    <string name="facebook_app_id">1715088011844460</string>
+    <string name="fb_login_protocol_scheme">fb1715088011844460</string>
+
+    <string name="people_interested">"%d interested"</string>
+
 </resources>

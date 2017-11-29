@@ -37,7 +37,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                Explore tab1 = new Explore();
+                ExploreEventsFragment tab1 = new ExploreEventsFragment();
                 return tab1;
             case 1:
                 Calender tab2 = new Calender();

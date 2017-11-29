@@ -2,7 +2,6 @@ package com.example.garima.bevents.Events;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,12 +24,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Comment;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class PostDetailsActivity extends Activity implements View.OnClickListener{
+public class PostDetailsActivity extends Activity implements View.OnClickListener {
 
     private static final String TAG = "PostDetailActivity";
 
@@ -78,7 +75,6 @@ public class PostDetailsActivity extends Activity implements View.OnClickListene
         mCommentsRecycler = findViewById(R.id.recycler_comments);
 
 
-
         mCommentButton.setOnClickListener(this);
         mCommentsRecycler.setLayoutManager(new LinearLayoutManager(this));
     }
@@ -95,11 +91,12 @@ public class PostDetailsActivity extends Activity implements View.OnClickListene
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
-                uploadFirebase post = dataSnapshot.getValue(uploadFirebase.class);
+
+                UploadFirebase post = dataSnapshot.getValue(UploadFirebase.class);
                 // [START_EXCLUDE]
-                mAuthorView.setText(post.currentuid);
-                mTitleView.setText(post.name);
-                mBodyView.setText(post.desc);
+                //mAuthorView.setText(post.currentuid);
+                //mTitleView.setText(post.name);
+                //mBodyView.setText(post.desc);
                 // [END_EXCLUDE]
             }
 
@@ -158,16 +155,15 @@ public class PostDetailsActivity extends Activity implements View.OnClickListene
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-
-                        uploadFirebase user = dataSnapshot.getValue(uploadFirebase.class);
-                        String authorName = user.name;
+                        UploadFirebase user = dataSnapshot.getValue(UploadFirebase.class);
+                        //String authorName = user.name;
 
                         String commentText = mCommentField.getText().toString();
-                         CommentPost comment;
-                        comment = new CommentPost(uid,authorName,commentText);
+                        CommentPost comment;
+                        //comment = new CommentPost(uid,authorName,commentText);
 
                         // Push the comment, it will appear in the list
-                        mCommentsReference.push().setValue(comment);
+                        //    mCommentsReference.push().setValue(comment);
 
                         // Clear the field
                         mCommentField.setText(null);
@@ -193,7 +189,8 @@ public class PostDetailsActivity extends Activity implements View.OnClickListene
             bodyView = itemView.findViewById(R.id.comment_body);
         }
     }
-//
+
+    //
     private static class CommentAdapter extends RecyclerView.Adapter<CommentViewHolder> {
 
         private Context mContext;
